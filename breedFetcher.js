@@ -14,7 +14,7 @@ const fetchBreedDescription = (breed, callback) => {
 
     
     if (!breed) {
-      callback('Breed not found.');
+      callback(error, null);
     } else {
       callback(null, breed.description);
     }
